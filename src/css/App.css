@@ -1,0 +1,123 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #2b1331;
+  background-image: linear-gradient(315deg, #2b1331 0%, #b9abcf 74%);
+}
+
+button {
+  width: 140px;
+  height: 80px;
+  background: #970697;
+  border: 3px ligten(#970697, 20%);
+  outline: none;
+  margin: 20px 14px 0 14px;
+  color: #9e8bbc;
+  font-size: 1.4em;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 2px 2px 5px 2px;
+          box-shadow: 2px 2px 5px 2px;
+}
+
+button a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #2b1331;
+  height: 50px;
+  padding-top: 8px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+header h2 {
+  margin-top: 0;
+  color: #b9abcf;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #b9abcf;
+}
+
+header nav a:hover {
+  color: #a783e2;
+}
+
+.app {
+  height: calc(100vh - 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.card {
+  width: 580px;
+  min-height: 460px;
+  background: #cfc1e69d;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+ul li span {
+  cursor: pointer;
+}
+
+ul li .active {
+  color: #fded57;
+}
+
+.cinema {
+  width: 540px;
+  margin: 0 auto;
+}
+
+.cinema .seat {
+  width: 50px;
+  height: 65px;
+  float: left;
+  background: gainsboro;
+  margin: 2px;
+}
+
+.cinema .seat:hover {
+  background: #e9e6e6;
+  cursor: pointer;
+}
+
+.cinema .seat.active {
+  background: #fded57;
+}
+/*# sourceMappingURL=App.css.map */

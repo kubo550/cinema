@@ -1,0 +1,103 @@
+$text-grey: #b9abcf;
+$btn-color: rgb(151, 6, 151);
+$text-active: rgb(253, 237, 87);
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #2b1331;
+  background-image: linear-gradient(315deg, #2b1331 0%, $text-grey 74%);
+}
+button {
+  width: 140px;
+  height: 80px;
+  background: $btn-color;
+  border: 3px ligten($btn-color, 20%);
+  outline: none;
+  margin: 20px 14px 0 14px;
+  color: darken($text-grey, 10%);
+  font-size: 1.4em;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 2px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+header {
+  background-color: #2b1331;
+  height: 50px;
+  padding-top: 8px;
+  padding-right: 5%;
+  padding-left: 5%;
+  h2 {
+    margin-top: 0;
+    color: $text-grey;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      margin-right: 10px;
+      color: $text-grey;
+
+      &:hover {
+        color: #a783e2;
+      }
+    }
+  }
+}
+.app {
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card {
+  width: 580px;
+  min-height: 460px;
+  background: #cfc1e69d;
+  border-radius: 20px;
+  padding: 20px;
+}
+ul {
+  li {
+    list-style: none;
+    font-size: 1.5rem;
+    span {
+      cursor: pointer;
+    }
+    .active {
+      color: $text-active;
+    }
+  }
+}
+.cinema {
+  width: 540px;
+  margin: 0 auto;
+  .seat {
+    width: 50px;
+    height: 65px;
+    float: left;
+    background: gainsboro;
+    margin: 2px;
+    &:hover {
+      background: rgb(233, 230, 230);
+      cursor: pointer;
+    }
+    &.active {
+      background: $text-active;
+    }
+  }
+}
